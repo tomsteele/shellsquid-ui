@@ -23,7 +23,7 @@ Install dependencies:
 
 `$ npm i`
 
-Start webpack-dev-server and open browser to `http://localhost:8080/`. API is conifigured to talk to the default shellsquid port on localhost:1337:
+Start webpack-dev-server and open browser to `http://localhost:8080/`. API is conifigured to talk to the default shellsquid port on `https://localhost:1337`:
 
 `$ npm start`
 
