@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r dist",
     "start": "node node_modules/.bin/webpack-dev-server",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html && cp -R app/images dist/ && cp -R app/views dist"
   },
