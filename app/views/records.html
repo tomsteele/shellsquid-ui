@@ -7,6 +7,7 @@
                 <tr>
                     <th>FQDN</th>
                     <th>Owner</th>
+                    <th class="one-pix">Protocol</th>
                     <th class="one-pix">Blacklisted</th>
                     <th>Created</th>
                 </tr>
@@ -15,6 +16,7 @@
                 <tr ng-repeat="record in vm.records | filter: vm.recordFilter | orderBy: 'record.fqdn'">
                     <td><a ng-href="/#/records/{{record.id}}">{{record.fqdn}}</a></td>
                     <td>{{record.owner.email}}</td>
+                    <td>{{record.handler_protocol}}</td>
                     <td>{{record.blacklist}}</td>
                     <td><span am-time-ago="record.created_at" am-preprocess="unix"></span></td>
                 </tr>

@@ -32,6 +32,7 @@
                 <thead>
                     <tr>
                         <th>FQDN</th>
+                        <th>Protocol</th>
                         <th>Blacklisted</th>
                         <th>Created</th>
                     </tr>
@@ -39,6 +40,7 @@
                 <tbody>
                     <tr ng-repeat="record in vm.records | orderBy: 'record.fqdn'">
                         <td><a ng-href="/#/records/{{record.id}}">{{record.fqdn}}</a></td>
+                        <td>{{record.handler_protocol}}</td>
                         <td>{{record.blacklist}}</td>
                         <td><span am-time-ago="record.created_at" am-preprocess="unix"></span></td>
                     </tr>
