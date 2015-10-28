@@ -15,6 +15,7 @@ module.exports = function ($http, MessengerService) {
         var info = response.data;
         info.proxy.http.listener = info.proxy.http.listener.replace(':', '');
         info.proxy.ssl.listener = info.proxy.ssl.listener.replace(':', '');
+        info.proxy.dns.listener = info.proxy.dns.listener.replace(':', '');
         info.clientVersion = pkg.version;
         return info;
     }
