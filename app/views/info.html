@@ -3,6 +3,8 @@
         <ul class="list-unstyled">
             <li>Server Version: {{vm.info.version}}</li>
             <li>Client Version: {{vm.info.clientVersion}}</li>
+            <li>DNS Listener Enabled: {{vm.info.proxy.dns.enabled}}</li>
+            <li>DNS Port: {{vm.info.proxy.dns.listener}}</li>
             <li>HTTP Listener Enabled: {{vm.info.proxy.http.enabled}}</li>
             <li>HTTP Listener Port: {{vm.info.proxy.http.listener}}</li>
             <li>HTTPS Listener Enabled: {{vm.info.proxy.ssl.enabled}}</li>
